@@ -28,6 +28,7 @@ namespace PAXLuckydraw
 
         private void initialize()
         {
+            
             for (int i = 0; i < 1000; i++)
             {
                 buffer[i] = createImage();

@@ -43,8 +43,8 @@ namespace PAXLuckydraw
             }
 
             //initialize buttons
-            tableLayoutPanel1.ColumnCount = buttonPerRow;
-            tableLayoutPanel1.RowCount = numofPrize / buttonPerRow;
+            tableLayoutPanel3.ColumnCount = buttonPerRow;
+            tableLayoutPanel3.RowCount = numofPrize / buttonPerRow;
 
 
             for (int i = 0; i < numofPrize; i++) 
@@ -59,7 +59,7 @@ namespace PAXLuckydraw
                 btn.Text = "Draw Prize "+(i+1);
                 btn.Click += Draw_Btn_Click;
                 btn.Tag = (int)(i + 1);
-                tableLayoutPanel1.Controls.Add(btn);
+                tableLayoutPanel3.Controls.Add(btn);
                 buttons.Add(btn);
 
             }
@@ -131,7 +131,7 @@ namespace PAXLuckydraw
             stopRow(1,0);
         }
 
-        private void btExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -186,5 +186,6 @@ namespace PAXLuckydraw
         {
 
         }
+
     }
 }
